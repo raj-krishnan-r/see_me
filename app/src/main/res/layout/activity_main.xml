@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.reshma.kicsee.MainActivity">
+
+    <FrameLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/screenP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Snap "
+                    tools:layout_editor_absoluteX="130dp"
+                    tools:layout_editor_absoluteY="3dp" />
+
+                <Button
+                    android:id="@+id/buttonLive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="LIVE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvusername"
+
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4sp"
+                    android:layout_weight="0.14"
+                    android:text="User"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="109dp"
+                    android:layout_height="47dp"
+                    app:srcCompat="@mipmap/northpointer" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="214dp"
+                android:layout_weight="0.66" />
+
+            <LinearLayout
+                android:layout_width="324dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.54"
+                    android:text="Speed"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info" />
+
+                <TextView
+                    android:id="@+id/tvspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+
+                    android:text="0.0 KMPH"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+                <TextView
+                    android:id="@+id/labelCoords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.79"
+                    android:text="Coords"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info" />
+
+                <TextView
+                    android:id="@+id/tvcoords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+
+                    android:text="0.0,0.0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="10sp">
+
+                <TextView
+                    android:id="@+id/labellastupdated"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0.43"
+                    android:text="Location last updated"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.Notification.Info" />
+
+                <TextView
+                    android:id="@+id/tvlast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="10sp">
+
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.83"
+                    android:max="20"
+                    android:progress="15" />
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:text="Hybrid Map" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
